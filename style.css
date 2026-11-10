@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #172033;
+}
+
+header {
+    background: #101b35;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+header span {
+    color: #53b7ff;
+}
+
+header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+.hero {
+    background: linear-gradient(135deg, #101b35, #2458a6);
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #53b7ff;
+    color: #101b35;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 18px;
+}
+
+.container h2 {
+    margin-bottom: 18px;
+}
+
+#search {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    font-size: 15px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 13px;
+    box-shadow: 0 3px 12px #0000000c;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 12px 0 6px;
+}
+
+.price {
+    color: #1768d1;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card button {
+    width: 100%;
+    background: #101b35;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer {
+    background: #101b35;
+    color: white;
+    text-align: center;
+    padding: 28px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin-top: 8px;
+}
+
+@media (min-width: 700px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
